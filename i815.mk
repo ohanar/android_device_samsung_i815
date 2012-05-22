@@ -18,15 +18,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 $(call inherit-product, device/samsung/exynos4tab-common/exynos4tab_base.mk)
 
-$(call inherit-product, $(LOCAL_PATH)/p6800_base.mk)
+$(call inherit-product, $(LOCAL_PATH)/i815_base.mk)
 
 $(call inherit-product-if-exists, vendor/samsung/exynos4tab-common/exynos4tab-common-vendor.mk)
 
-$(call inherit-product-if-exists, vendor/samsung/p6800/p6800-vendor.mk)
+$(call inherit-product-if-exists, vendor/samsung/i815/i815-vendor.mk)
 
 # Discard inherited values and use our own instead.
-PRODUCT_NAME := p6800
-PRODUCT_DEVICE := p6800
+PRODUCT_NAME := i815
+PRODUCT_DEVICE := i815
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung
-PRODUCT_MODEL := GT-P6800
+PRODUCT_MODEL := SCH-I815

@@ -18,10 +18,10 @@
 -include device/samsung/exynos4tab-common/BoardConfigCommon.mk
 
 # Use the non-open-source parts, if they're present
--include vendor/samsung/p6800/BoardConfigVendor.mk
+-include vendor/samsung/i815/BoardConfigVendor.mk
 
-TARGET_OTA_ASSERT_DEVICE := p6800,GT-P6800
+TARGET_OTA_ASSERT_DEVICE := i815,SCH-I815
 
-TARGET_KERNEL_CONFIG := cyanogenmod_p6800_defconfig
+TARGET_KERNEL_CONFIG := cyanogenmod_i815_defconfig
 
 TARGET_BOOTANIMATION_NAME := horizontal-1280x800
