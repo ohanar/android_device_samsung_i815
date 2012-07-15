@@ -1,0 +1,13 @@
+system/bin/rild
+:system/lib/libril.so:obj/lib/libril.so
+system/lib/libsec-ril-apalone.so
+:system/lib/libsecril-client.so:obj/lib/libsecril-client.so
+
+# These are the real ril files
+# They don't work right now
+
+#system/lib/rild
+#:system/lib/libril.so:obj/lib/libril.so
+#system/lib/libsec-ril40.so
+#system/lib/libsec-ril40-cdma.so
+#:system/lib/libsecril-client.so:obj/lib/libsecril-client.so

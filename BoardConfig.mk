@@ -17,9 +17,6 @@
 # Include common smdk4210-tab configuration
 -include device/samsung/smdk4210-tab/BoardConfigCommon.mk
 
-# Use the non-open-source parts, if they're present
--include vendor/samsung/i815/BoardConfigVendor.mk
-
 TARGET_OTA_ASSERT_DEVICE := i815,SCH-I815
 
 TARGET_KERNEL_CONFIG := cyanogenmod_i815_defconfig

@@ -14,6 +14,8 @@
 # limitations under the License.
 #
 
+$(call inherit-product, vendor/cm/config/cdma.mk)
+
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 $(call inherit-product, device/samsung/smdk4210-tab/smdk4210-tab_base.mk)
@@ -22,7 +24,7 @@ $(call inherit-product-if-exists, vendor/samsung/smdk4210-tab/smdk4210-tab_base.
 
 $(call inherit-product, $(LOCAL_PATH)/i815_base.mk)
 
-$(call inherit-product-if-exists, vendor/samsung/i815/i815-vendor.mk)
+$(call inherit-product-if-exists, vendor/samsung/i815/i815_base.mk)
 
 # Discard inherited values and use our own instead.
 PRODUCT_NAME := i815

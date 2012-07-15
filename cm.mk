@@ -20,9 +20,6 @@ PRODUCT_RELEASE_NAME := SCH-I815
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/cm/config/common_full_tablet_wifionly.mk)
 
-# Inherit CDMA common stuff
-$(call inherit-product, vendor/cm/config/cdma.mk)
-
 # Inherit device configuration
 $(call inherit-product, $(LOCAL_PATH)/i815.mk)
 
