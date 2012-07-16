@@ -24,10 +24,6 @@ PRODUCT_LOCALES += hdpi
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=160
 
-# We have MMS
-PRODUCT_PACKAGES += \
-	Mms
-
 # Init files
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init.smdk4210.fstab.rc:root/init.smdk4210.fstab.rc \
@@ -35,4 +31,4 @@ PRODUCT_COPY_FILES += \
 
 # These are the hardware-specific features
 PRODUCT_COPY_FILES += \
-    frameworks/base/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml
+    frameworks/base/data/etc/android.hardware.telephony.cdma.xml:system/etc/permissions/android.hardware.telephony.cdma.xml
