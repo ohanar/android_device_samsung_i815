@@ -27,7 +27,3 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Init files
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init.smdk4210.fstab.rc:root/init.smdk4210.fstab.rc
-
-# CDMA
-PRODUCT_COPY_FILES += \
-    frameworks/base/data/etc/android.hardware.telephony.cdma.xml:system/etc/permissions/android.hardware.telephony.cdma.xml
