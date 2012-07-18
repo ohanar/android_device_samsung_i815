@@ -14,6 +14,8 @@
 # limitations under the License.
 #
 
+DEVICE_PACKAGE_OVERLAYS += device/samsung/i815/overlay
+
 # Include common smdk4210-tab configuration
 -include device/samsung/smdk4210-tab/BoardConfigCommon.mk
 
