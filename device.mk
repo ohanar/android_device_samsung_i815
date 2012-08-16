@@ -27,10 +27,3 @@ PRODUCT_LOCALES += hdpi
 
 PRODUCT_PACKAGES += \
     Mms
-
-# RIL
-PRODUCT_PROPERTY_OVERRIDES += \
-    rild.libpath=/system/lib/libsec-ril-apalone.so \
-    rild.libargs=-d /dev/ttyS0 \
-    keyguard.no_require_sim=true \
-    ro.carrier=wifi-only
