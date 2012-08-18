@@ -20,10 +20,5 @@ $(call inherit-product, device/samsung/smdk4210-tab/device.mk)
 $(call inherit-product-if-exists, vendor/samsung/smdk4210-tab/vendor.mk)
 $(call inherit-product-if-exists, vendor/samsung/i815/vendor.mk)
 
-# the Tab 7.7 has a xlarge hpdi screen
-PRODUCT_AAPT_CONFIG := xlarge hdpi
-PRODUCT_AAPT_PREF_CONFIG := hdpi
-PRODUCT_LOCALES += hdpi
-
 PRODUCT_PACKAGES += \
     Mms
