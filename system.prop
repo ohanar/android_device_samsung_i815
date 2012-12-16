@@ -1,7 +1,17 @@
 # RIL
-rild.libpath=/system/lib/libsec-ril-apalone.so
+rild.libpath=/system/lib/libsec-ril_lte.so
 rild.libargs=-d /dev/ttyS0
+telephony.lteOnCdmaDevice=1
 keyguard.no_require_sim=true
-ro.carrier=wifi-only
+
+ro.setupwizard.prepay_setup_url=http://quickaccess.verizonwireless.com/bbportal/oem/start.do?imsi=^1
+ro.setupwizard.prepay_redir_url=quickaccess.verizonwireless.com
+
+ro.com.google.clientidbase=android-samsung
+ro.com.google.clientidbase.ms=android-verizon
+ro.com.google.clientidbase.am=android-verizon
+ro.com.google.clientidbase.gmm=android-samsung
+ro.com.google.clientidbase.yt=android-verizon
+
 # tvdpi
 ro.sf.lcd_density=213

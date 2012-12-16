@@ -20,8 +20,10 @@ $(call inherit-product, vendor/cm/config/common_full_tablet_wifionly.mk)
 $(call inherit-product, vendor/cm/config/cdma.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 $(call inherit-product, device/samsung/smdk4210-tab/device.mk)
+$(call inherit-product, build/target/product/telephony.mk)
 $(call inherit-product-if-exists, vendor/samsung/smdk4210-tab/vendor.mk)
 $(call inherit-product-if-exists, vendor/samsung/i815/vendor.mk)
 
+$(call inherit-product-if-exists, hardware/samsung/exynos4/ril/Android.mk)
 PRODUCT_PACKAGES += \
-    Mms
+    libsecril-client
