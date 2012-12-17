@@ -24,6 +24,5 @@ $(call inherit-product, build/target/product/telephony.mk)
 $(call inherit-product-if-exists, vendor/samsung/smdk4210-tab/vendor.mk)
 $(call inherit-product-if-exists, vendor/samsung/i815/vendor.mk)
 
-$(call inherit-product-if-exists, hardware/samsung/exynos4/ril/Android.mk)
 PRODUCT_PACKAGES += \
     libsecril-client
