@@ -1,2 +1,3 @@
 system/lib/hw/gps.exynos4.so
 system/lib/lib_gsd4t.so
+system/vendor/etc/sirfgps.conf

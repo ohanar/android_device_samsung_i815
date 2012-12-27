@@ -24,6 +24,10 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/configs/etc/tinyalsa-audio.xml:system/etc/tinyalsa-audio.xml \
 	$(LOCAL_PATH)/configs/etc/audio_policy.conf:system/etc/audio_policy.conf
 
+# GPS
+PRODUCT_COPY_FILES += \
+	$(LOCAL_PATH)/configs/etc/gps.conf:system/etc/gps.conf
+
 # Radio
 $(call inherit-product, build/target/product/telephony.mk)
 $(call inherit-product, vendor/cm/config/cdma.mk)
